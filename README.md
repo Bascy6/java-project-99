@@ -3,4 +3,4 @@
 
 [![Maintainability](https://qlty.sh/badges/2753622e-9228-4f2e-9fae-54fcfac24f94/maintainability.svg)](https://qlty.sh/gh/Bascy6/projects/java-project-99)
 
-[![Maintainability](https://qlty.sh/badges/2753622e-9228-4f2e-9fae-54fcfac24f94/maintainability.svg)](https://qlty.sh/gh/Bascy6/projects/java-project-99)
+[![Code Coverage](https://qlty.sh/badges/2753622e-9228-4f2e-9fae-54fcfac24f94/test_coverage.svg)](https://qlty.sh/gh/Bascy6/projects/java-project-99)
