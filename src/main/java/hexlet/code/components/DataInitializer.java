@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
-public class DataInitializer implements ApplicationRunner {
+public final class DataInitializer implements ApplicationRunner {
 
     private final CustomUserDetailsService userService;
 
@@ -29,12 +29,12 @@ public class DataInitializer implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         if (userRepository.findByEmail("hexlet@example.com").isEmpty()) {
             var email = "hexlet@example.com";
-            var userData = new User();
-            userData.setEmail(email);
-            userData.setFirstName("Admin");
-            userData.setLastName("Admin");
-            userData.setPasswordDigest("qwerty");
-            userService.createUser(userData);
+            var user = new User();
+            user.setEmail(email);
+            user.setFirstName("Tota");
+            user.setLastName("Admin");
+            user.setPasswordDigest("qwerty");
+            userService.createUser(user);
         }
 
         var draftStatus = new TaskStatus();
