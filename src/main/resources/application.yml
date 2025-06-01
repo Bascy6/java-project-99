@@ -1,5 +1,28 @@
-  spring:
+spring:
+  application:
+    name: app
   jpa:
+    open-in-view: false
+    generate-ddl: true
     show-sql: true
     hibernate:
       ddl-auto: update
+  output:
+    ansi:
+      enabled: always
+
+rsa:
+  private-key: classpath:certs/private_key.pem
+  public-key: classpath:certs/public.pem
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /api-docs
+
+sentry:
+  dsn: https://0d82fc68fc499ae677b3859f163ce4d0@o4509423233990656.ingest.de.sentry.io/4509423236874320
+  # Set traces-sample-rate to 1.0 to capture 100% of transactions for tracing.
+  # We recommend adjusting this value in production.
+  traces-sample-rate: 1.0

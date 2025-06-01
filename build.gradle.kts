@@ -47,7 +47,7 @@ sentry {
 	// code as part of your stack traces in Sentry.
 	includeSourceContext = true
 
-	org = "nadezhda"
+	org = "hexlet-79"
 	projectName = "java-spring-boot"
 	authToken = System.getenv("SENTRY_AUTH_TOKEN")
 }
