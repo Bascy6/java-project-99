@@ -28,5 +28,3 @@ public abstract class TaskStatusMapper {
 
     public abstract void update(TaskStatusUpdateDTO taskStatusUpdateDTO, @MappingTarget TaskStatus taskStatus);
 }
-
-

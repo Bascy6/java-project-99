@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
-public final class DataInitializer implements ApplicationRunner {
+public class DataInitializer implements ApplicationRunner {
 
     private final CustomUserDetailsService userService;
 
@@ -29,12 +29,12 @@ public final class DataInitializer implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         if (userRepository.findByEmail("hexlet@example.com").isEmpty()) {
             var email = "hexlet@example.com";
-            var user = new User();
-            user.setEmail(email);
-            user.setFirstName("Tota");
-            user.setLastName("Admin");
-            user.setPasswordDigest("qwerty");
-            userService.createUser(user);
+            var userData = new User();
+            userData.setEmail(email);
+            userData.setFirstName("Admin");
+            userData.setLastName("Admin");
+            userData.setPasswordDigest("qwerty");
+            userService.createUser(userData);
         }
 
         var draftStatus = new TaskStatus();
@@ -71,5 +71,3 @@ public final class DataInitializer implements ApplicationRunner {
         labelRepository.save(bugLabel);
     }
 }
-
-

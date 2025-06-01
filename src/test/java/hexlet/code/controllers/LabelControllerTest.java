@@ -164,5 +164,3 @@ class LabelControllerTest {
         assertFalse(labelRepository.existsById(testLabel.getId()), "Label should be deleted after deletion request");
     }
 }
-
-

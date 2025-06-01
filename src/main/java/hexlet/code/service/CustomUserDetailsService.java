@@ -13,7 +13,7 @@ import hexlet.code.repository.UserRepository;
 
 @Service
 @RequiredArgsConstructor
-public final class CustomUserDetailsService implements UserDetailsManager {
+public class CustomUserDetailsService implements UserDetailsManager {
 
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
@@ -54,4 +54,3 @@ public final class CustomUserDetailsService implements UserDetailsManager {
         throw new UnsupportedOperationException("Unimplemented method 'userExists'");
     }
 }
-

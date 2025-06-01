@@ -14,7 +14,7 @@ import java.util.List;
 
 @Service
 @AllArgsConstructor
-public class TaskStatusService {
+public final class TaskStatusService {
 
     @Autowired
     private TaskStatusRepository repository;

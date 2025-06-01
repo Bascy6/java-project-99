@@ -90,4 +90,3 @@ public abstract class TaskMapper {
                 .orElseThrow(() -> new ResourceNotFoundException("TaskStatus with slug" + slug + "not found"));
     }
 }
-

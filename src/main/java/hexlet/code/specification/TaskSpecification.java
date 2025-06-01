@@ -40,4 +40,3 @@ public final class TaskSpecification {
                 : cb.equal(root.get("taskStatus").get("slug"), status);
     }
 }
-

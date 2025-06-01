@@ -47,4 +47,3 @@ public abstract class UserMapper {
         data.setPassword(encoder.encode(password));
     }
 }
-

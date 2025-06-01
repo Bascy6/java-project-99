@@ -89,4 +89,3 @@ public class User implements UserDetails, BaseEntity {
         return true;
     }
 }
-

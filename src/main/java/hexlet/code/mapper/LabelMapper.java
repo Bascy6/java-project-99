@@ -30,5 +30,3 @@ public abstract class LabelMapper {
 
     public abstract Label map(LabelDTO labelDTO);
 }
-
-
