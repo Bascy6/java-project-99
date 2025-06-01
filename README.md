@@ -4,3 +4,9 @@
 [![Maintainability](https://qlty.sh/badges/2753622e-9228-4f2e-9fae-54fcfac24f94/maintainability.svg)](https://qlty.sh/gh/Bascy6/projects/java-project-99)
 
 [![Code Coverage](https://qlty.sh/badges/2753622e-9228-4f2e-9fae-54fcfac24f94/test_coverage.svg)](https://qlty.sh/gh/Bascy6/projects/java-project-99)
+
+Ссылка:
+
+https://java-project-99-061b.onrender.com
+
+Task Manager – система управления задачами, подобная http://www.redmine.org/. Она позволяет ставить задачи, назначать исполнителей и менять их статусы. Для работы с системой требуется регистрация и аутентификация.
