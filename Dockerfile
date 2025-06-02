@@ -2,10 +2,13 @@ FROM gradle:8.7-jdk21
 
 WORKDIR /
 
-COPY / .
+COPY gradlew .
+COPY build.gradle.kts .
+COPY settings.gradle.kts .
+COPY gradle/ gradle/
 
 RUN chmod +x gradlew
 
-RUN ./gradlew installDist
+COPY src/ src/
 
-CMD ./build/install/app/bin/app
+RUN ./gradlew build installDist
