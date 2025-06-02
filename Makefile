@@ -1,22 +1,22 @@
 build:
-	./gradlew clean build
+	gradle clean build
 
 install:
-	./gradlew installDist
+	gradle installDist
 
 test:
-	./gradlew test
+	gradle test
 
 lint:
-	./gradlew checkstyleMain
+	gradle checkstyleMain
 
 report:
-	./gradlew jacocoTestReport
+	gradle jacocoTestReport
 
 dev:
-	./gradlew bootRun --args='--spring.profiles.active=dev'
+	gradle bootRun --args='--spring.profiles.active=dev'
 
 prod:
-	./gradlew bootRun --args='--spring.profiles.active=prod'
+	gradle bootRun --args='--spring.profiles.active=prod'
 
 .PHONY: build
