@@ -25,7 +25,7 @@ import java.util.List;
 @RequestMapping("/api/tasks")
 public class TaskController {
 
-    private TaskService service;
+    private final TaskService service;
 
     @GetMapping()
     public ResponseEntity<List<TaskDTO>> getAll(TaskFilterDTO params) {

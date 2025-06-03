@@ -2,6 +2,7 @@
 .idea/
 build/
 .gradle/
+node_modules/
 
 # Ignore Gradle project-specific cache directory
 .gradle

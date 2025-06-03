@@ -7,7 +7,6 @@ import hexlet.code.exception.ResourceNotFoundException;
 import hexlet.code.mapper.LabelMapper;
 import hexlet.code.repository.LabelRepository;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,11 +15,8 @@ import java.util.List;
 @AllArgsConstructor
 public class LabelService {
 
-    @Autowired
-    private LabelRepository repository;
-
-    @Autowired
-    private LabelMapper labelMapper;
+    private final LabelRepository repository;
+    private final LabelMapper labelMapper;
 
     public List<LabelDTO> getAll() {
         return repository.findAll().stream().map(labelMapper::map).toList();
@@ -47,9 +43,6 @@ public class LabelService {
     }
 
     public void delete(Long id) {
-        if (!repository.existsById(id)) {
-            throw new ResourceNotFoundException("Label with id" + id + "not found");
-        }
         repository.deleteById(id);
     }
 }
