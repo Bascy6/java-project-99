@@ -26,7 +26,7 @@ import java.util.List;
 @RequestMapping("/api/task_statuses")
 public class TaskStatusController {
 
-    private TaskStatusService service;
+    private final TaskStatusService service;
 
     @GetMapping()
     public ResponseEntity<List<TaskStatusDTO>> getAll() {

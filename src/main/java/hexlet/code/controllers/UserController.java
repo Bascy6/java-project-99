@@ -26,7 +26,7 @@ import java.util.List;
 @RequestMapping("/api/users")
 public class UserController {
 
-    private UserService service;
+    private final UserService service;
 
     private static final String SELF_OPERATION = """
                 @userRepository.findById(#id).get().getEmail() == authentication.getName()
